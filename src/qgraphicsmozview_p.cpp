@@ -671,9 +671,9 @@ void QGraphicsMozViewPrivate::touchEvent(QTouchEvent* event)
         ReceiveInputEvent(meventStart);
     }
     if (meventMove.mTouches.Length()) {
-        if (meventStart.mTouches.Length()) {
+        /*if (meventStart.mTouches.Length()) {
             meventMove.mTouches.AppendElements(meventStart.mTouches);
-        }
+        }*/
         Q_ASSERT(meventMove.mTouches.Length() > 0);
         ReceiveInputEvent(meventMove);
     }
